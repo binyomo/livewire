@@ -20,7 +20,7 @@
             </select>
         </div>
         <div class="col">
-            
+            <input wire:model="search" type="text" name="" class="form-control form-control-sm" placeholder="Search">
         </div>
     </div>
 
