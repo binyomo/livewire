@@ -11,6 +11,19 @@
 		<livewire:contact-create></livewire:contact-create>
 	@endif	
 
+    <div class="row py-2">
+        <div class="col">
+            <select wire:model="paginate" class="form-control form-control-sm w-auto">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <div class="col">
+            
+        </div>
+    </div>
+
     <table class="table">	
     	<thead class="bg-dark text-light">
     		<tr>
@@ -34,4 +47,5 @@
     		@endforeach
     	</tbody>
     </table>
+    {{ $contacts->links() }}
 </div>
